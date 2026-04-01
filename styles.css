@@ -761,6 +761,9 @@ footer p {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+  .experience-grid{
+    grid-template-columns: 1fr;
+  }
   #typewriter {
     font-size: 2.5rem;
   }
