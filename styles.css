@@ -765,7 +765,7 @@ footer p {
     grid-template-columns: 1fr;
   }
   .contact-container{
-    margin-right: 2px;
+    margin-right: 15px;
   }
   #typewriter {
     font-size: 2.5rem;
