@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Kumar Sharma - Portfolio</title>
+    <meta name="description" content="Portfolio of Deepak Kumar Sharma, Electronics and Communication Professional">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dynamic Backgrounds -->
+    <div id="bg-layer-1" class="bg-layer active"></div>
+
+    <!-- Background Canvas for Galaxy Stars -->
+    <canvas id="galaxyCanvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">DKS</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="greeting">Hello, I am</p>
+                <h1 id="typewriter"></h1>
+                <h2 class="subtitle">Electronics & Communication Engineer</h2>
+                
+                <div class="biodata">
+                    <p>Welcome to my digital universe. I build innovative hardware solutions and intelligent systems.I am an Electronics and VLSI enthusiast with a strong foundation in digital design and embedded systems. I focus on building efficient, real-world solutions by applying concepts of hardware design, system architecture, and optimization. </p>
+                    
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary">Let's Talk</a>
+                    <a href="#projects" class="btn secondary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container glass-panel">
+                <div class="about-text">
+                    <p>I am an Electronics and Communication Engineering student with a strong interest in VLSI and digital system design. I enjoy working on hardware-focused projects that involve microcontrollers, system simulation, and real-time problem solving. My academic journey has helped me build a solid foundation in digital electronics, logic design, and embedded systems.</p>
+                    <p>I have hands-on experience with tools like ModelSim and have worked on projects related to embedded systems and circuit design, which improved my understanding of how theoretical concepts translate into practical applications. I am a quick learner who continuously explores new technologies in semiconductor design and strives to improve both my technical and analytical skills.</p>
+                    <p>I am looking to start my career in VLSI or core electronics, where I can contribute to innovative designs while growing as a professional in the field.</p>
+                    
+                    <ul class="info-list">
+                        <li><strong>CGPA:</strong> 8.95</li>
+                        <li><strong>Degree:</strong> B.Tech Electronics & Communication</li>
+                        <!-- <li><strong>Email:</strong> [Your Email Here]</li>
+                        <li><strong>Address:</strong> [Your Address Here]</li>
+                        <li><strong>Phone:</strong> [Your Phone Number Here]</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">My Technical Universe</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-panel">
+                    <div class="icon">💻</div>
+                    <h3>Microcontrollers</h3>
+                    <p>Arduino, ESP32</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="icon">🔌</div>
+                    <h3>Circuit Design</h3>
+                    <p>Basic PCB design using KiCad,Electronic circuit analysis</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="icon">🧩</div>
+                    <h3>Digital Design</h3>
+                    <p>Verilog, VHDL, ModelSim Simulation</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="icon">⚙️</div>
+                    <h3>Embedded Systems</h3>
+                    <p>Firmware Development, Hardware Interfacing</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="icon">⌨️</div>
+                    <h3>Programming Languages</h3>
+                    <p>Java,C,HTML ,CSS,React.js,Python</p>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="icon">🤖</div>
+                    <h3>IoT Systems</h3>
+                    <p>Sensors, Wireless Communication</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-panel" onclick="openModal('project1')">
+                    <div class="project-image" style="background-image: url('assets/road_safety.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <h3>Smart Road Safety Framework</h3>
+                    <p class="summary">An IoT and sensor-based framework designed for hilly terrains...</p>
+                    <span class="read-more">Click to read more &rarr;</span>
+                </div>
+
+                <div class="project-card glass-panel" onclick="openModal('project2')">
+                    <div class="project-image" style="background-image: url('assets/traffic_fsm.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <h3>FSM Traffic Signal Controller</h3>
+                    <p class="summary">RTL Design & Verification of a Finite State Machine traffic signal...</p>
+                    <span class="read-more">Click to read more &rarr;</span>
+                </div>
+
+                <div class="project-card glass-panel" onclick="openModal('project3')">
+                    <div class="project-image" style="background-image: url('assets/minichip.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <h3>Mini-Chip Design via OpenLane</h3>
+                    <p class="summary">Full RTL-to-GDSII flow resulting in a complete mini-chip layout...</p>
+                    <span class="read-more">Click to read more &rarr;</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internships & Certifications Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Internships & Certifications</h2>
+            <div class="experience-grid">
+                <div class="experience-card glass-panel">
+                    <h3>Embedded Systems Intern</h3>
+                    <p class="meta">Genus Power | July 2023</p>
+                    <p>Worked on smart metering and IoT-based systems with real-time data monitoring. Gained hands-on experience in embedded systems and power system applications. Focused on testing, validation, and improving system efficiency.</p>
+                </div>
+
+                <div class="experience-card glass-panel">
+                    <h3>Physical Design Trainee</h3>
+                    <p class="meta">Maven Silicon | June 2025</p>
+                    <p>Completed training in ASIC physical design including floorplanning and routing. Learned static timing analysis (STA) and timing closure techniques. Gained knowledge of power optimization and industry-level design flow.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Initiate Contact</h2>
+            <div class="contact-container">
+                <!-- Hidden iframe to silently capture crazy FormSubmit redirects -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                
+                <form id="contactForm" action="https://formsubmit.co/dipak6541.6615@gmail.com" method="POST" target="hidden_iframe" class="contact-form glass-panel">
+                    <input type="hidden" name="_subject" value="New Transmission from DKS Portfolio Website!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Transmission Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Outline your message"></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn primary" style="width: 100%;">Transmit Data</button>
+                    
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+                
+                <div class="contact-info glass-panel">
+                    <h3>Direct Comm Link</h3>
+                    <p>Feel free to reach out to me for collaborations, inquiries, or just to talk tech.</p>
+                    <a href="mailto:dipak6541.6615@gmail.com" class="info-item" style="text-decoration: none; transition: color 0.3s ease;">
+                        <span>📧</span> dipak6541.6615@gmail.com
+                    </a>
+                    <a href="tel:+916378966541" class="info-item" style="text-decoration: none; transition: color 0.3s ease;">
+                        <span>📞</span> +91 6378966541
+                    </a>
+                    <a href="https://www.linkedin.com/in/deepak-kumar-sharma-55423033b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="info-item" style="text-decoration: none; transition: color 0.3s ease;">
+                        <span>💼</span> Deepak Kumar Sharma
+                    </a>
+                    <a href="https://github.com/Deepaksharma596" target="_blank" rel="noopener noreferrer" class="info-item" style="text-decoration: none; transition: color 0.3s ease;">
+                        <span>💻</span> GitHub Profile
+                    </a>
+                    <div class="info-item" style="cursor: default;">
+                        <span>📍</span> Jhunjhunu, Rajasthan
+                    </div>
+                    
+                    <a href="assets/resume.pdf" download="Deepak_Kumar_Sharma_Resume.pdf" class="btn primary" style="display: block; text-align: center; margin-top: 2rem;">
+                        📄 Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-logo">DKS</h2>
+            <p>&copy; <span id="year"></span> Deepak Kumar Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
