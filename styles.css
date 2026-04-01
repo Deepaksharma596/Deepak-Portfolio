@@ -764,6 +764,9 @@ footer p {
   .experience-grid{
     grid-template-columns: 1fr;
   }
+  .contact-container{
+    margin-right: 2px;
+  }
   #typewriter {
     font-size: 2.5rem;
   }
